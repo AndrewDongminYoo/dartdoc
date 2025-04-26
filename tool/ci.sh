@@ -7,24 +7,24 @@
 # Fast fail the script on failures, and echo commands as they execute.
 set -ex
 
-DART_VERSION=`dart --version 2>&1 | awk '{print $4}'`
+export DART_VERSION=$(dart --version 2>&1 | awk '{print $4}')
 
-if [ "$DARTDOC_BOT" = "sdk-docs" ]; then
-  # Build the SDK docs
-  # silence stdout but echo stderr
-  echo ""
-  echo "Building and validating SDK docs..."
-  dart run tool/task.dart validate sdk-docs
-  echo "SDK docs process finished"
-elif [ "$DARTDOC_BOT" = "flutter" ]; then
-  echo "Running flutter dartdoc bot"
-  dart run tool/task.dart doc flutter
-elif [ "$DARTDOC_BOT" = "packages" ]; then
-  echo "Running packages dartdoc bot"
-  dart run tool/task.dart doc package --name=access --version=">=3.0.0"
-  # Negative test for flutter_plugin_tools, make sure right error message is displayed.
-  dart run tool/task.dart doc package --name=flutter_plugin_tools --version=">=0.0.14+1" 2>&1 | grep "warning: package:flutter_plugin_tools has no documentable libraries"
+if [[ ${DARTDOC_BOT} == "sdk-docs" ]]; then
+	# Build the SDK docs
+	# silence stdout but echo stderr
+	echo ""
+	echo "Building and validating SDK docs..."
+	dart run tool/task.dart validate sdk-docs
+	echo "SDK docs process finished"
+elif [[ ${DARTDOC_BOT} == "flutter" ]]; then
+	echo "Running flutter dartdoc bot"
+	dart run tool/task.dart doc flutter
+elif [[ ${DARTDOC_BOT} == "packages" ]]; then
+	echo "Running packages dartdoc bot"
+	dart run tool/task.dart doc package --name=access --version=">=3.0.0"
+	# Negative test for flutter_plugin_tools, make sure right error message is displayed.
+	dart run tool/task.dart doc package --name=flutter_plugin_tools --version=">=0.0.14+1" 2>&1 | grep "warning: package:flutter_plugin_tools has no documentable libraries"
 else
-  echo "Running main dartdoc bot"
-  dart run tool/task.dart buildbot
+	echo "Running main dartdoc bot"
+	dart run tool/task.dart buildbot
 fi
