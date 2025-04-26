@@ -3,9 +3,9 @@ name: Test
 on:
   # Run CI on pushes to the main branch, and on PRs against main.
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   schedule:
     - cron: 0 15 * * *
 
@@ -32,9 +32,9 @@ jobs:
             sdk: dev
             job: main
         exclude:
-            # Do not try to run flutter against the "stable" sdk,
-            # it is unlikely to work and produces uninteresting
-            # results.
+          # Do not try to run flutter against the "stable" sdk,
+          # it is unlikely to work and produces uninteresting
+          # results.
           - sdk: 3.6.0
             job: flutter
           - sdk: 3.6.0

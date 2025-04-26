@@ -3,13 +3,13 @@ version: 2
 
 updates:
   # Enable weekly pubspec.yaml dependencies checks.
-  - package-ecosystem: "pub"
-    directory: "/"
+  - package-ecosystem: pub
+    directory: /
     schedule:
-      interval: "weekly"
-      day: "sunday"
+      interval: weekly
+      day: sunday
     labels:
-      - "type-infra"
+      - type-infra
 
   # Maintain dependencies for GitHub Actions.
   - package-ecosystem: github-actions

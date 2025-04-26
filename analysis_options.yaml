@@ -11,8 +11,8 @@ analyzer:
     strict-raw-types: true
     strict-inference: true
   exclude:
-    - 'doc/**'
-    - 'testing/**'
+    - doc/**
+    - testing/**
 
 linter:
   rules:

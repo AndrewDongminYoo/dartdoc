@@ -1,5 +1,5 @@
 dartdoc:
   tools:
     drill:
-      command: ["bin/drill.dart"]
-      description: "Puts holes in things."
+      command: [bin/drill.dart]
+      description: Puts holes in things.
