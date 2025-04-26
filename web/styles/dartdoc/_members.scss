@@ -37,7 +37,8 @@
 
 /* Note that the generated HTML for pub packages may have `section` tags
    transformed into `div` tags, so we have two selectors here. */
-section, div {
+section,
+div {
   &#setter {
     border-top: 1px solid #ddd;
     padding-top: 36px;

@@ -66,7 +66,7 @@
     margin: 0;
     background-color: var(--main-bg-color);
     border: 1px solid var(--main-header-color);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -82,7 +82,7 @@ a.tt-container {
 .enter-search-message {
   position: sticky;
   top: 0;
-  background-color: #AAA;
+  background-color: #aaa;
   padding: 0;
   font-size: 14px;
   margin: 0;
@@ -135,7 +135,7 @@ a.tt-container {
 
   // Do not show the container as a section.
   .tt-container-text {
-    display: none
+    display: none;
   }
 
   .tt-suggestion {

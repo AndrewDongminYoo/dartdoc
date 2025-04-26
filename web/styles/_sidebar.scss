@@ -3,7 +3,8 @@
 // BSD-style license that can be found in the LICENSE file.
 
 .sidebar {
-  h5, ol li {
+  h5,
+  ol li {
     text-overflow: ellipsis;
     overflow: hidden;
     padding: 3px 0 3px 3px;
@@ -50,7 +51,8 @@
     margin: 0 0 22px 0;
     padding-top: 0;
 
-    a, a:hover {
+    a,
+    a:hover {
       color: var(--main-sidebar-color);
     }
   }
@@ -88,7 +90,8 @@
   background-color: black;
 }
 
-.sidebar-offcanvas-left, .sidebar-offcanvas-right {
+.sidebar-offcanvas-left,
+.sidebar-offcanvas-right {
   // Even as the primary viewport scrolls, the sidebars should remain visible,
   // but below the top header which is always at the top of the viewport.
   position: sticky;
@@ -144,7 +147,7 @@
   .sidebar-offcanvas-left {
     left: -100%;
     position: fixed;
-    transition: all .25s ease-out;
+    transition: all 0.25s ease-out;
     z-index: 2000;
     top: 0;
     width: 280px;

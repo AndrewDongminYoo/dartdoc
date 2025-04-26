@@ -5,7 +5,7 @@
 pre code {
   white-space: pre;
   word-wrap: initial;
-  font-size: 100%
+  font-size: 100%;
 }
 
 pre {
@@ -13,13 +13,13 @@ pre {
   background-color: #eee;
   font-size: 14px;
 
-  @media(max-width: 840px) {
+  @media (max-width: 840px) {
     margin: 16px 0;
   }
 }
 
 code {
-  font-family: 'Roboto Mono', Menlo, monospace;
+  font-family: "Roboto Mono", Menlo, monospace;
   color: inherit;
   padding: 0.2em 0.4em;
   font-size: 85%;
@@ -35,31 +35,42 @@ code {
   color: var(--main-text-color);
   background: var(--main-code-bg);
 
-  .hljs-string, .hljs-doctag {
+  .hljs-string,
+  .hljs-doctag {
     color: var(--main-string-color);
   }
 
-  .hljs-number, .hljs-literal, .hljs-variable,
-  .hljs-template-variable, .hljs-tag .hljs-attr {
+  .hljs-number,
+  .hljs-literal,
+  .hljs-variable,
+  .hljs-template-variable,
+  .hljs-tag .hljs-attr {
     color: var(--main-var-color);
   }
 
-  .hljs-comment, .hljs-quote {
+  .hljs-comment,
+  .hljs-quote {
     color: var(--main-comment-color);
     font-style: italic;
   }
 
-  .hljs-title, .hljs-section, .hljs-selector-id {
+  .hljs-title,
+  .hljs-section,
+  .hljs-selector-id {
     color: var(--main-section-color);
     font-weight: bold;
   }
 
-  .hljs-tag, .hljs-name, .hljs-attribute {
+  .hljs-tag,
+  .hljs-name,
+  .hljs-attribute {
     color: var(--main-tag-color);
     font-weight: normal;
   }
 
-  .hljs-keyword, .hljs-selector-tag, .hljs-subst {
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-subst {
     color: var(--main-keyword-color);
     font-weight: bold;
   }

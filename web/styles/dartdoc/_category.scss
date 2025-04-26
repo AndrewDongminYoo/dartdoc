@@ -9,7 +9,7 @@
   background-color: #999;
   text-transform: uppercase;
   color: white;
-  opacity: .5;
+  opacity: 0.5;
 
   a {
     color: white;
@@ -26,26 +26,26 @@
 
   /* Colors for category based on categoryOrder in dartdoc_options.config. */
   &.cp-0 {
-    background-color: #54b7c4
+    background-color: #54b7c4;
   }
 
   &.cp-1 {
-    background-color: #54c47f
+    background-color: #54c47f;
   }
 
   &.cp-2 {
-    background-color: #c4c254
+    background-color: #c4c254;
   }
 
   &.cp-3 {
-    background-color: #c49f54
+    background-color: #c49f54;
   }
 
   &.cp-4 {
-    background-color: #c45465
+    background-color: #c45465;
   }
 
   &.cp-5 {
-    background-color: #c454c4
+    background-color: #c454c4;
   }
 }

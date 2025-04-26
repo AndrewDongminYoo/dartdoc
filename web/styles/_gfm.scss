@@ -29,7 +29,7 @@
     color: var(--alert-title-color, inherit);
 
     &::before {
-      font: 22px / 1 'Material Symbols Outlined';
+      font: 22px / 1 "Material Symbols Outlined";
       user-select: none;
     }
   }
@@ -38,7 +38,7 @@
     --alert-title-color: var(--alert-info-fgColor);
 
     .markdown-alert-title::before {
-      content: 'info';
+      content: "info";
     }
   }
 
@@ -46,7 +46,7 @@
     --alert-title-color: var(--alert-tip-fgColor);
 
     .markdown-alert-title::before {
-      content: 'lightbulb';
+      content: "lightbulb";
     }
   }
 
@@ -54,7 +54,7 @@
     --alert-title-color: var(--alert-important-fgColor);
 
     .markdown-alert-title::before {
-      content: 'feedback';
+      content: "feedback";
     }
   }
 
@@ -62,7 +62,7 @@
     --alert-title-color: var(--alert-warning-fgColor);
 
     .markdown-alert-title::before {
-      content: 'warning';
+      content: "warning";
     }
   }
 
@@ -70,7 +70,7 @@
     --alert-title-color: var(--alert-error-fgColor);
 
     .markdown-alert-title::before {
-      content: 'report';
+      content: "report";
     }
   }
 }

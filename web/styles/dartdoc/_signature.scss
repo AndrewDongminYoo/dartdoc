@@ -86,13 +86,16 @@
 
 /* Note that the generated HTML for pub packages may have `section` tags
    transformed into `div` tags, so we have two selectors here. */
-section, div {
+section,
+div {
   .multi-line-signature div.parameters {
     margin-left: 24px;
   }
 }
 
-#instance-methods, #instance-properties, #operators {
+#instance-methods,
+#instance-properties,
+#operators {
   dt.inherited {
     .name {
       font-weight: 400;
